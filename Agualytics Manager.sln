@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "Agualytics Manager (Package)", "Agualytics Manager\Agualytics Manager (Package)\Agualytics Manager (Package).wapproj", "{D081A386-9B9C-4627-B0C7-CC8F8A069AA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B8F81975-486A-4AD2-AB53-F2A111D34FCD} = {B8F81975-486A-4AD2-AB53-F2A111D34FCD}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agualytics Manager", "Agualytics Manager\Agualytics Manager\Agualytics Manager.csproj", "{47B4D3DC-CFB7-4524-98B2-0068C7846A86}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B8F81975-486A-4AD2-AB53-F2A111D34FCD} = {B8F81975-486A-4AD2-AB53-F2A111D34FCD}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agualytics.Manager.DataAccess", "Agualytics.Manager.DataAccess\Agualytics.Manager.DataAccess.csproj", "{B8F81975-486A-4AD2-AB53-F2A111D34FCD}"
 EndProject

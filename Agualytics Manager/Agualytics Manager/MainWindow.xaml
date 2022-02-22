@@ -19,12 +19,12 @@
                VerticalAlignment="Center"
                Margin="28,0,0,0"/>
         </Grid>
-        <NavigationView x:Name="nvSample">
+        <NavigationView x:Name="nvSample" SelectionChanged="FrameChange" IsBackButtonVisible="Visible" IsSettingsVisible="False">
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Play" Content="Menu Item1" Tag="MainContent" />
                 <NavigationViewItem Icon="Save" Content="Menu Item2" Tag="AddClient" />
-                <NavigationViewItem Icon="Refresh" Content="Menu Item3" Tag="SamplePage3" />
-                <NavigationViewItem Icon="Download" Content="Menu Item4" Tag="SamplePage4" />
+                <NavigationViewItem Icon="Refresh" Content="Menu Item3" Tag="MainContent" />
+                <NavigationViewItem Icon="Download" Content="Menu Item4" Tag="AddClient" />
             </NavigationView.MenuItems>
             <Frame x:Name="contentFrame" />
         </NavigationView>

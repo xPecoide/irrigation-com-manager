@@ -28,7 +28,20 @@ namespace Agualytics_Manager
             this.InitializeComponent();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(AppTitleBar);
+        }
 
+        private void FrameChange(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+            SetCurrentNavigationViewItem(args.SelectedItemContainer as NavigationViewItem);
+        }
+
+        public void SetCurrentNavigationViewItem(NavigationViewItem item)
+        {
+            if (item == null) {return;}
+            if (item.Tag == null) {return;}
+            contentFrame.Navigate(Type.GetType(item.Tag.ToString()), item.Content);
+            nvSample.Header = item.Content;
+            nvSample.SelectedItem = item;
         }
     }
 }
