@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PRACTICAS00</Machine>
+    <WindowsUser>practicas00</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>Agualytics.Manager</PackageIdentityName>
+    <PackageIdentityPublisher>CN=practicas00</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\obj\x64\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>F6651A4394F7F4EB114A3B30F70810EAA8F23CED2A0AF09D52C4D9627AF41CC5</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>Agualytics.Manager_1.0.0.0_x64__vyf87432mr3ay</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>Agualytics.Manager_vyf87432mr3ay!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>Agualytics.Manager</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=practicas00</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\bin\x64\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-22T08:29:23.847</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\AddClient.xbf">
+      <PackagePath>AddClient.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\MainContent.xbf">
+      <PackagePath>MainContent.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\MainWindow.xbf">
+      <PackagePath>MainWindow.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\Redist\Debug\x64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+      <Modified>2020-12-02T04:31:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-21T09:39:00.554</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2022-02-21T09:39:00.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-21T09:39:00.555</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-21T09:39:00.555</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-21T09:39:00.556</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\StoreLogo.png">
+      <PackagePath>Images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-21T09:39:00.556</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-02-21T09:39:00.559</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager %28Package%29\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2022-02-22T08:29:23.724</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Agualytics Manager\Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+      <Modified>2021-11-16T04:57:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.WinUI.dll">
+      <PackagePath>Agualytics Manager\Microsoft.WinUI.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll">
+      <PackagePath>Agualytics Manager\Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
+      <PackagePath>Agualytics Manager\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
+      <PackagePath>Agualytics Manager\Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
+      <PackagePath>Agualytics Manager\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll">
+      <PackagePath>Agualytics Manager\Microsoft.Windows.System.Power.Projection.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\lib\net5.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
+      <PackagePath>Agualytics Manager\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+      <Modified>2021-11-16T05:08:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\runtimes\win10-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Agualytics Manager\runtimes\win10-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2021-11-16T04:57:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Agualytics Manager\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2021-11-16T04:57:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Agualytics Manager\runtimes\win10-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+      <Modified>2021-11-16T04:57:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.22\lib\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>Agualytics Manager\Microsoft.Windows.SDK.NET.dll</PackagePath>
+      <Modified>2021-11-17T10:43:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.22\lib\WinRT.Runtime.dll">
+      <PackagePath>Agualytics Manager\WinRT.Runtime.dll</PackagePath>
+      <Modified>2021-11-17T10:43:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\Agualytics Manager.deps.json">
+      <PackagePath>Agualytics Manager\Agualytics Manager.deps.json</PackagePath>
+      <Modified>2022-02-22T08:29:22.686</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\obj\x64\Debug\net6.0-windows10.0.19041.0\App.xbf">
+      <PackagePath>Agualytics Manager\App.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\obj\x64\Debug\net6.0-windows10.0.19041.0\AddClient.xbf">
+      <PackagePath>Agualytics Manager\AddClient.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\obj\x64\Debug\net6.0-windows10.0.19041.0\MainContent.xbf">
+      <PackagePath>Agualytics Manager\MainContent.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\obj\x64\Debug\net6.0-windows10.0.19041.0\MainWindow.xbf">
+      <PackagePath>Agualytics Manager\MainWindow.xbf</PackagePath>
+      <Modified>2022-02-22T08:29:21.679</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\obj\x64\Debug\net6.0-windows10.0.19041.0\apphost.exe">
+      <PackagePath>Agualytics Manager\Agualytics Manager.exe</PackagePath>
+      <Modified>2022-02-22T08:29:22.086</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\Agualytics Manager.runtimeconfig.json">
+      <PackagePath>Agualytics Manager\Agualytics Manager.runtimeconfig.json</PackagePath>
+      <Modified>2022-02-21T11:28:11.359</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\practicas00\source\C#\Agualytics Manager\Agualytics Manager\Agualytics Manager\bin\x64\Debug\net6.0-windows10.0.19041.0\Agualytics Manager.dll">
+      <PackagePath>Agualytics Manager\Agualytics Manager.dll</PackagePath>
+      <Modified>2022-02-22T08:29:22.053</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.0.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.0</Name>
+      <Version>0.319.455.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.0, MinVersion = 0.319.455.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.0.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.0.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.0</Name>
+      <Version>0.319.455.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.0, MinVersion = 0.319.455.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.0.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.0.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.0</Name>
+      <Version>0.319.455.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.0, MinVersion = 0.319.455.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.0.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.0.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.0</Name>
+      <Version>0.319.455.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.0, MinVersion = 0.319.455.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\practicas00\.nuget\packages\microsoft.windowsappsdk\1.0.0\build\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.0.msix</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.30704.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.30704.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

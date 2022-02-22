@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xSDgigqLPYvJXllHZrmiRSRqJzffEaTv420/WOT3CrsaCNEDcYrdwVQnem5whp+rc1dnvXg7+iDyJ6x4ad8atA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\practicas00\\source\\C#\\Agualytics Manager\\Agualytics Manager\\Agualytics Manager (Package)\\Agualytics Manager (Package).wapproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\practicas00\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.197\\microsoft.windows.sdk.buildtools.10.0.22000.197.nupkg.sha512",
+    "C:\\Users\\practicas00\\.nuget\\packages\\microsoft.windowsappsdk\\1.0.0\\microsoft.windowsappsdk.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

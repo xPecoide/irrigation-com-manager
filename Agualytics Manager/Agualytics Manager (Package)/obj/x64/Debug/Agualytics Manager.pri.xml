@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="Agualytics Manager" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="AddClient.xbf" uri="ms-resource://Agualytics Manager/Files/AddClient.xbf">
+				<Candidate type="Path">
+					<Value>AddClient.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://Agualytics Manager/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainContent.xbf" uri="ms-resource://Agualytics Manager/Files/MainContent.xbf">
+				<Candidate type="Path">
+					<Value>MainContent.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainWindow.xbf" uri="ms-resource://Agualytics Manager/Files/MainWindow.xbf">
+				<Candidate type="Path">
+					<Value>MainWindow.xbf</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

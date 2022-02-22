@@ -1,0 +1,245 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LiteDB;
+using System.IO;
+using Windows.Storage;
+
+namespace Agualytics.Manager.DataAccess
+{
+    public class Parser
+    {
+        public static string DBPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "database.db");
+
+        public static Client GetThings(string DNIParam)
+        {
+            using var db = new LiteDatabase(DBPath);
+            var clients = db.GetCollection<Client>("clientes");
+            var lobueno = clients.FindOne(Query.EQ("DNI", DNIParam));
+
+            return lobueno;
+        }
+
+        public static void InsertThings(Client client)
+        {
+            using var db = new LiteDatabase(DBPath);
+            //db.DropCollection("clientes");
+            var col = db.GetCollection<Client>("clientes");
+            col.Insert(client);
+            col.EnsureIndex(x => x.DNI);
+        }
+
+        public static void UpdateThings(Client clt)
+        {
+            using var db = new LiteDatabase(DBPath);
+            var clients = db.GetCollection<Client>("clientes");
+            var updt = clients.FindOne(Query.EQ("DNI", clt.DNI));
+
+            updt.Name = clt.Name;
+            updt.DNI = clt.DNI;
+            updt.Address = clt.Address;
+            updt.Tlf = clt.Tlf;
+            updt.Email = clt.Email;
+            updt.IBAN = clt.IBAN;
+
+            for (int i = 0; i < clt.Lands.Count; i++)
+            {
+                updt.Lands[i].RefCat = clt.Lands[i].RefCat;
+                updt.Lands[i].OwnerName = clt.Lands[i].OwnerName;
+                updt.Lands[i].OwnerDNI = clt.Lands[i].OwnerDNI;
+                updt.Lands[i].OwnerAddress = clt.Lands[i].OwnerAddress;
+                updt.Lands[i].Address = clt.Lands[i].Address;
+                updt.Lands[i].Endowment = clt.Lands[i].Endowment;
+                updt.Lands[i].Latitude = clt.Lands[i].Latitude;
+                updt.Lands[i].Longitude = clt.Lands[i].Longitude;
+                updt.Lands[i].Consumptions = clt.Lands[i].Consumptions;
+                for (int a = 0; a < clt.Lands[i].Consumptions.Count; a++)
+                {
+                    updt.Lands[i].Consumptions[a].DateFrom = clt.Lands[i].Consumptions[a].DateFrom;
+                    updt.Lands[i].Consumptions[a].DateTo = clt.Lands[i].Consumptions[a].DateTo;
+                    updt.Lands[i].Consumptions[a].ConsumedLiters = clt.Lands[i].Consumptions[a].ConsumedLiters;
+
+                    updt.Lands[i].Consumptions[a].Invoice.DateExp = clt.Lands[i].Consumptions[a].Invoice.DateExp;
+                    updt.Lands[i].Consumptions[a].Invoice.DateFrom = clt.Lands[i].Consumptions[a].Invoice.DateFrom;
+                    updt.Lands[i].Consumptions[a].Invoice.DateTo = clt.Lands[i].Consumptions[a].Invoice.DateTo;
+                    updt.Lands[i].Consumptions[a].Invoice.ConsumedLiters = clt.Lands[i].Consumptions[a].Invoice.ConsumedLiters;
+                    updt.Lands[i].Consumptions[a].Invoice.LiterPrice = clt.Lands[i].Consumptions[a].Invoice.LiterPrice;
+                    updt.Lands[i].Consumptions[a].Invoice.Tax = clt.Lands[i].Consumptions[a].Invoice.Tax;
+                }
+            }
+
+            clients.Update(updt);
+        }
+
+        public static class Lands
+        {
+            public static void Add(Client clt, Land lnd)
+            {
+                using var db = new LiteDatabase(DBPath);
+                var clients = db.GetCollection<Client>("clientes");
+                var updt = clients.FindOne(Query.EQ("DNI", clt.DNI));
+
+                try
+                {
+                    updt.Lands.Add(lnd);
+                    clients.Update(updt);
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+
+            public static void Remove(Client clt, string refcat)
+            {
+                using var db = new LiteDatabase(DBPath);
+                var clients = db.GetCollection<Client>("clientes");
+                var updt = clients.FindOne(Query.EQ("DNI", clt.DNI));
+
+                try
+                {
+                    var landToRemove = updt.Lands.Where(x => x.RefCat == refcat).FirstOrDefault();
+                    updt.Lands.Remove(landToRemove);
+                    clients.Update(updt);
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static class Consumptions
+        {
+            public static void Add(string dni, string refcat, Consumption cmp)
+            {
+                using var db = new LiteDatabase(DBPath);
+                var clients = db.GetCollection<Client>("clientes");
+                var updt = clients.FindOne(Query.EQ("DNI", dni));
+
+                try
+                {
+                    var consumList = updt.Lands.Where(x => x.RefCat == refcat).Select(x => x.Consumptions).FirstOrDefault();
+                    var consumDuplicated = consumList.Where(x => x.DateFrom == cmp.DateFrom).FirstOrDefault();
+
+                    if (consumDuplicated == null)
+                    {
+                        consumList.Add(cmp);
+                    }
+                    else
+                    {
+                        throw new Exception("Ya existe una tabla de consumo para esa fecha.");
+                    }
+
+                    clients.Update(updt);
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+
+            public static void Remove(string dni, string refcat, DateTime cmpDateFrom)
+            {
+                using var db = new LiteDatabase(DBPath);
+                var clients = db.GetCollection<Client>("clientes");
+                var updt = clients.FindOne(Query.EQ("DNI", dni));
+
+                try
+                {
+                    var consumList = updt.Lands.Where(x => x.RefCat == refcat).Select(x => x.Consumptions).FirstOrDefault();
+                    var consumToRemove = consumList.Where(x => x.DateFrom == cmpDateFrom).FirstOrDefault();
+                    consumList.Remove(consumToRemove);
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void DummyReturn(string path)
+        {
+            FileInfo file;
+            try
+            {
+                file = new FileInfo(path);
+                Console.WriteLine(file.FullName);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public static class Import
+        {
+            public static void CSV(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void XLS(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void XML(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void JSON(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void Manual()
+            {
+                List<string> values = new();
+                string[] parameters = { "name", "DNI", "address", "phone number", "e-mail", "IBAN", "cadastre ref", "land address" };
+                foreach (string param in parameters)
+                {
+                    Console.Write("Write the " + param + ": ");
+                    string val = Console.ReadLine();
+                    values.Add(val);
+                }
+
+                string[] vals = values.ToArray();
+
+                Client client = new()
+                {
+                    Name = vals[5]
+                };
+
+                InsertThings(client);
+
+            }
+        }
+
+        public static class Export
+        {
+            public static void CSV(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void XLS(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void XML(string path)
+            {
+                DummyReturn(path);
+            }
+
+            public static void JSON(string path)
+            {
+                DummyReturn(path);
+            }
+        }
+    }
+}
