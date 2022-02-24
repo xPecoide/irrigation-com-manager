@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Agualytics_Manager.Customers"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Agualytics_Manager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+        <NavigationView x:Name="nvSample" IsBackButtonVisible="Visible" IsSettingsVisible="False">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Edit" Content="Editar datos" x:Name="MainContent1" />
+                <NavigationViewItem Icon="Save" Content="Guardar" x:Name="AddClient1" />
+                <NavigationViewItem Icon="Refresh" Content="Restablecer formulario" x:Name="MainContent2" />
+                <NavigationViewItem Icon="Download" Content="Exportar cliente" x:Name="AddClient2" />
+            </NavigationView.MenuItems>
+            <Frame x:Name="customersContentFrame" />
+        </NavigationView>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Padding="10" Background="AliceBlue">
+            <PersonPicture ProfilePicture="Images/WindowIcon.png" HorizontalAlignment="Center" MaxWidth="48" MaxHeight="48"/>
+            <TextBlock Text="Alberto del Río" TextWrapping="Wrap" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

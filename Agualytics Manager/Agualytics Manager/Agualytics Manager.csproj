@@ -31,8 +31,10 @@
     <WarningLevel>5</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="AddClient.xaml" />
-    <None Remove="MainContent.xaml" />
+    <None Remove="App.xaml" />
+    <None Remove="Customers.xaml" />
+    <None Remove="Dashboard.xaml" />
+    <None Remove="MainWindow.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,13 +51,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="MainContent.xaml">
+    <Page Update="Dashboard.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="AddClient.xaml">
+    <Page Update="Customers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

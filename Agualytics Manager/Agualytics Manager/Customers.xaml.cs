@@ -21,11 +21,13 @@ namespace Agualytics_Manager
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainContent : Page
+    public sealed partial class Customers : Page
     {
-        public MainContent()
+        public Customers()
         {
             this.InitializeComponent();
+            FrameNavigationOptions options = new();
+            customersContentFrame.NavigateToType(typeof(Dashboard), null, options);
         }
     }
 }
