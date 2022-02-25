@@ -9,10 +9,18 @@ using Windows.Storage;
 
 namespace Agualytics.Manager.DataAccess
 {
-    public class Parser
+    /// <summary>
+    /// This static class contains data parsing and database operations features.
+    /// </summary>
+    public static class Parser
     {
         public static string DBPath = Path.Combine(ApplicationData.Current.LocalFolder.Path, "database.db");
 
+        /// <summary>
+        /// Returns entire collection of a customer by ID card number.
+        /// </summary>
+        /// <param name="DNIParam">DNI</param>
+        /// <returns><c>Client</c></returns>
         public static Client GetThings(string DNIParam)
         {
             using var db = new LiteDatabase(DBPath);
@@ -22,6 +30,10 @@ namespace Agualytics.Manager.DataAccess
             return lobueno;
         }
 
+        /// <summary>
+        /// Inserts a new <c>Client</c> object collection in database.
+        /// </summary>
+        /// <param name="client">Customer</param>
         public static void InsertThings(Client client)
         {
             using var db = new LiteDatabase(DBPath);
@@ -31,6 +43,10 @@ namespace Agualytics.Manager.DataAccess
             col.EnsureIndex(x => x.DNI);
         }
 
+        /// <summary>
+        /// Updates a <c>Client</c> collection in database. All properties can be modified.
+        /// </summary>
+        /// <param name="clt"></param>
         public static void UpdateThings(Client clt)
         {
             using var db = new LiteDatabase(DBPath);
@@ -73,8 +89,16 @@ namespace Agualytics.Manager.DataAccess
             clients.Update(updt);
         }
 
+        /// <summary>
+        /// Static subclass focused on <c>Land</c> object inside <c>Client/c> object operations. Such as adding, removing or updating a Land.
+        /// </summary>
         public static class Lands
         {
+            /// <summary>
+            /// Adds a new <c>Land</c> object to a <c>Client</c> object collection in database.
+            /// </summary>
+            /// <param name="clt">Customer</param>
+            /// <param name="lnd">New land</param>
             public static void Add(Client clt, Land lnd)
             {
                 using var db = new LiteDatabase(DBPath);
@@ -92,6 +116,11 @@ namespace Agualytics.Manager.DataAccess
                 }
             }
 
+            /// <summary>
+            /// Removes a <c>Land</c> object inside a <c>Client</c> object collection in database.
+            /// </summary>
+            /// <param name="clt">Customer</param>
+            /// <param name="refcat">Land cadastral reference number</param>
             public static void Remove(Client clt, string refcat)
             {
                 using var db = new LiteDatabase(DBPath);
@@ -111,8 +140,17 @@ namespace Agualytics.Manager.DataAccess
             }
         }
 
+        /// <summary>
+        /// Static subclass focused on <c>Consumption</c> object inside <c>Land/c> object operations. Such as adding, removing or updating a Consumption interval.
+        /// </summary>
         public static class Consumptions
         {
+            /// <summary>
+            /// Adds a new <c>Consumption</c> object to a <c>Land</c> object of a customer in database.
+            /// </summary>
+            /// <param name="dni">Customer ID card number</param>
+            /// <param name="refcat">Land cadastral reference number</param>
+            /// <param name="cmp">Consumption interval</param>
             public static void Add(string dni, string refcat, Consumption cmp)
             {
                 using var db = new LiteDatabase(DBPath);
@@ -141,6 +179,12 @@ namespace Agualytics.Manager.DataAccess
                 }
             }
 
+            /// <summary>
+            /// Removes a <c>Consumption</c> object from a <c>Land</c> object of a customer in database.
+            /// </summary>
+            /// <param name="dni">Customer ID card number</param>
+            /// <param name="refcat">Land cadastral reference number</param>
+            /// <param name="cmpDateFrom">Consumption's interval start date</param>
             public static void Remove(string dni, string refcat, DateTime cmpDateFrom)
             {
                 using var db = new LiteDatabase(DBPath);
@@ -160,6 +204,10 @@ namespace Agualytics.Manager.DataAccess
             }
         }
 
+        /// <summary>
+        /// Simple return to test fileIO methods.
+        /// </summary>
+        /// <param name="path">Path to file</param>
         public static void DummyReturn(string path)
         {
             FileInfo file;
@@ -174,26 +222,29 @@ namespace Agualytics.Manager.DataAccess
             }
         }
 
+        /// <summary>
+        /// Static class to import data in plenty of formats.
+        /// </summary>
         public static class Import
         {
             public static void CSV(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void XLS(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void XML(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void JSON(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void Manual()
@@ -218,27 +269,29 @@ namespace Agualytics.Manager.DataAccess
 
             }
         }
-
+        /// <summary>
+        /// Static class to export data in plenty of formats.
+        /// </summary>
         public static class Export
         {
             public static void CSV(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void XLS(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void XML(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
 
             public static void JSON(string path)
             {
-                DummyReturn(path);
+                throw new NotImplementedException();
             }
         }
     }

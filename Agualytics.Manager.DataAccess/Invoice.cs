@@ -7,6 +7,9 @@ using LiteDB;
 
 namespace Agualytics.Manager.DataAccess
 {
+    /// <summary>
+    /// Represents an invoice from a <code>Consumption</code> object. This class is used to hold required data to generate a PDF invoice.
+    /// </summary>
     public class Invoice
     {
         [BsonId]

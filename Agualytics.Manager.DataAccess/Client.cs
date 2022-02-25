@@ -10,6 +10,9 @@ using LiteDB;
 
 namespace Agualytics.Manager.DataAccess
 {
+    /// <summary>
+    /// Represents a Customer and his properties.
+    /// </summary>
     public class Client
     {
         [BsonId]

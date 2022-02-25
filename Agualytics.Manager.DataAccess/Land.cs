@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Agualytics.Manager.DataAccess
 {
+    /// <summary>
+    /// Represents a physical land with identifying properties. Always belongs to a customer, but the owner can be different.
+    /// </summary>
     public class Land
     {
         public string RefCat { get; set; }
