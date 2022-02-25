@@ -26,6 +26,7 @@ namespace Agualytics_Manager
         public Dashboard()
         {
             this.InitializeComponent();
+            int x = 1;
         }
     }
 }
